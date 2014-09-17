@@ -1,0 +1,62 @@
+/*
+Select body—set background-color: #fdf6e3;
+Select header and footer–set font-size: 2em;
+Select ul inside nav–set font-family: sans-serif;
+Select the logo by ID—set border: 2px solid #d04b16;
+Select the class wrapper—set background-color: #eee8d5;
+Select the IDs contents, favs, facts and types—set color: #93a1a1;
+Use a child selector to get .dfn inside the wrapper—set background-color: #b58900;
+Use an adjacent selector to get the second strong inside .dfn—set color: #fff;
+Write the fully qualified selector for mark, starting with html—set background-color: #719e07;
+Select the link with @rel="external"—set background-color: #2694d8;
+Select the first li inside the ol—set color: #719e47;
+Select the last li inside the ol—set color: #2aa198;
+Select every odd li inside .types—set background-color: #657ba3;
+Select every even li inside .types—set background-color: #586e75;
+Select every 3rd li inside .types—set background-color: #d04b16;
+*/
+
+ 
+body {
+    background-color: #fdf6e3;
+}
+header , footer {
+    font-size: 2em;
+}
+nav ul {
+    font-family: sans serif;
+}
+.wrapper{
+    color:#eee8d5;
+} 
+#contents, #favs, #facts, #types {
+    color:#93a1a1;
+}
+.wrapper>.dfn{
+#b58900;
+}
+.dfn strong:nth-child(2){
+    color: #fff;
+}
+html body nav ul li mark{
+    background-color: #719e07;
+}
+
+[rel="external"]{
+    color: #fff;   
+}
+ol > li:first-child{
+    color: #719e47
+}
+ol > li:last-child{
+    color: #2aa198
+}
+.types>li:nth-child(odd){
+    background-color: #657ba3;
+}
+.types>li:nth-child(even){
+    background-color: #586e75;
+}
+.types>li:nth-child(3n){
+    background-color: #d04b16;
+}
